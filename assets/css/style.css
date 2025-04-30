@@ -106,7 +106,7 @@ img{
     width: calc(10 * var(--scale));
     height: calc(7 * var(--scale));
     margin-left: calc(8 * var(--scale));
-    background-image: url(/assets/img/icon_arrow02.png);
+    background-image: url(../img/icon_arrow02.png);
     background-size: contain;
     background-position: center center;
 }
@@ -317,15 +317,15 @@ img{
 }
 .kv_bg01{
     animation-delay: 0s;
-    background-image: url(/assets/img/kv_bg01.jpg);
+    background-image: url(../img/kv_bg01.jpg);
 }
 .kv_bg02{
     animation-delay: 5s;
-    background-image: url(/assets/img/kv_bg02.jpg);
+    background-image: url(../img/kv_bg02.jpg);
 }
 .kv_bg03{
     animation-delay: 10s;
-    background-image: url(/assets/img/kv_bg03.jpg);
+    background-image: url(../img/kv_bg03.jpg);
 }
 @keyframes kv_bg {
     0%{
@@ -360,7 +360,7 @@ img{
         align-items: center;
         width: calc(340 * var(--scale));
         height: calc(557 * var(--scale));
-        background-image: url(/assets/img/kv_bg01.jpg);
+        background-image: url(../img/kv_bg01.jpg);
     }
     .kv_front{
         width: calc(267 * var(--scale));
@@ -451,13 +451,13 @@ img{
     margin-left: calc(15 * var(--scale));
     width: calc(18 * var(--scale));
     height: calc(18 * var(--scale));
-    background-image: url(/assets/img/icon_arrow_link.png);
+    background-image: url(../img/icon_arrow_link.png);
     background-size: contain;
     background-position: center center;
     transition-delay: .15s;
 }
 .commonContainer_link:hover::after{
-    background-image: url(/assets/img/icon_arrow_link-hover.png);
+    background-image: url(../img/icon_arrow_link-hover.png);
 }
 
 @media screen and (max-width: 768px) {
@@ -554,7 +554,7 @@ img{
     display: block;
     width: calc(26 * var(--scale));
     height: calc(26 * var(--scale));
-    background-image: url(/assets/img/icon_arrow.png);
+    background-image: url(../img/icon_arrow.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -567,7 +567,7 @@ img{
     right: 0;
     width: calc(26 * var(--scale));
     height: calc(26 * var(--scale));
-    background-image: url(/assets/img/icon_arrow_hover.png);
+    background-image: url(../img/icon_arrow_hover.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
