@@ -28,6 +28,44 @@ img{
 
 /* header
 -------------------------------------------- */
+.load{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 100;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 2s;
+}
+.load.is-active{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.load img{
+    display: block;
+    width: calc(784 * var(--scale));
+    height: calc(208 * var(--scale));
+    margin: auto;
+    object-fit: contain;
+    object-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+    .load img{
+        width: calc(267 * var(--scale));
+        height: calc(150 * var(--scale));
+    }
+}
+
+/* header
+-------------------------------------------- */
 .header{
     position: fixed;
     top: 0;
@@ -68,7 +106,7 @@ img{
     width: calc(10 * var(--scale));
     height: calc(7 * var(--scale));
     margin-left: calc(8 * var(--scale));
-    background-image: url(../img/icon_arrow02.png);
+    background-image: url(/assets/img/icon_arrow02.png);
     background-size: contain;
     background-position: center center;
 }
@@ -279,15 +317,15 @@ img{
 }
 .kv_bg01{
     animation-delay: 0s;
-    background-image: url(../img/kv_bg01.jpg);
+    background-image: url(/assets/img/kv_bg01.jpg);
 }
 .kv_bg02{
     animation-delay: 5s;
-    background-image: url(../img/kv_bg02.jpg);
+    background-image: url(/assets/img/kv_bg02.jpg);
 }
 .kv_bg03{
     animation-delay: 10s;
-    background-image: url(../img/kv_bg03.jpg);
+    background-image: url(/assets/img/kv_bg03.jpg);
 }
 @keyframes kv_bg {
     0%{
@@ -322,7 +360,7 @@ img{
         align-items: center;
         width: calc(340 * var(--scale));
         height: calc(557 * var(--scale));
-        background-image: url(../img/kv_bg01.jpg);
+        background-image: url(/assets/img/kv_bg01.jpg);
     }
     .kv_front{
         width: calc(267 * var(--scale));
@@ -413,13 +451,13 @@ img{
     margin-left: calc(15 * var(--scale));
     width: calc(18 * var(--scale));
     height: calc(18 * var(--scale));
-    background-image: url(../img/icon_arrow_link.png);
+    background-image: url(/assets/img/icon_arrow_link.png);
     background-size: contain;
     background-position: center center;
     transition-delay: .15s;
 }
 .commonContainer_link:hover::after{
-    background-image: url(../img/icon_arrow_link-hover.png);
+    background-image: url(/assets/img/icon_arrow_link-hover.png);
 }
 
 @media screen and (max-width: 768px) {
@@ -455,6 +493,7 @@ img{
         margin-top: calc(40 * var(--scale));
     }
     .commonContainer_text{
+        margin-top: calc(40 * var(--scale));
         width: calc(340 * var(--scale));
         font-size: calc(14 * var(--scale));
         line-height: 2;
@@ -515,7 +554,7 @@ img{
     display: block;
     width: calc(26 * var(--scale));
     height: calc(26 * var(--scale));
-    background-image: url(../img/icon_arrow.png);
+    background-image: url(/assets/img/icon_arrow.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -528,7 +567,7 @@ img{
     right: 0;
     width: calc(26 * var(--scale));
     height: calc(26 * var(--scale));
-    background-image: url(../img/icon_arrow_hover.png);
+    background-image: url(/assets/img/icon_arrow_hover.png);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -695,6 +734,7 @@ img{
         margin-right: 0;
         width: calc(340 * var(--scale));
         flex: 0 0 auto;
+        pointer-events: none;
     }
     .package_slider_name{
         margin-top: calc(14 * var(--scale));
@@ -826,7 +866,7 @@ img{
     }
     .delivery_slider_arrow{
         display: inline-block;
-        margin-top: calc(32 * var(--scale));
+        margin-top: calc(10 * var(--scale));
         margin-right: calc(42 * var(--scale));
         width: calc(42 * var(--scale));
         height: calc(42 * var(--scale));
@@ -1177,7 +1217,7 @@ img{
     }
     .footer_block_link{
         display: block;
-        font-size: calc(14 * var(--scale));
+        font-size: calc(18 * var(--scale));
         font-weight: 500;
         margin-top: calc(24 * var(--scale));
     }
@@ -1189,7 +1229,7 @@ img{
     }
     .footer_block_child_link{
         display: block;
-        font-size: calc(14 * var(--scale));
+        font-size: calc(16 * var(--scale));
         padding-left: calc(14 * var(--scale));
     }
     .footer_block_child_link:not(:first-child){

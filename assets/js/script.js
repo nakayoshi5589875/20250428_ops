@@ -7,6 +7,7 @@ window.addEventListener('load', (e) => {
     clickHidden("js-hidden");
     scrollInOut("js-scrollInOut");
     modal("js-modal");
+    classAdd("js-load");
     modalClose("js-modalClose");
     modalMove("js-modalMove");
   });
@@ -26,10 +27,12 @@ window.addEventListener('load', (e) => {
 // ------------------------------------------------------------
 document.addEventListener( "DOMContentLoaded", function() {
     var splide01 = new Splide(".splide01",{
-        type   : 'slide',
+      type   : 'loop',
         perPage: 5,
         perMove: 1,
         arrows: true,
+        autoplay: true,
+        interval: 5000,
         breakpoints: {
             768: {
                 destroy: true,
@@ -67,6 +70,17 @@ document.addEventListener( "DOMContentLoaded", function() {
         }
     });
   }
+
+  // classAdd
+  // ------------------------------------------------------------
+  const classAdd = (Class) =>{
+    const targetsClass  = document.getElementsByClassName(Class);
+    const targetsArr    = Array.from(targetsClass);
+    targetsArr.forEach(function(target){
+      target.classList.add("is-active");
+    });
+  }
+  
   
   // scrollInOut
   // ------------------------------------------------------------
