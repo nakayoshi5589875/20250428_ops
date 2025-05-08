@@ -310,6 +310,7 @@ img{
     animation-name: kv_bg;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+    animation-fill-mode:none;
     background-size: cover;
     background-position: center center;
     opacity: 0;
@@ -335,15 +336,15 @@ img{
         opacity: 0;
         z-index: 1;
     }
-    33%{
+    25%{
         opacity: 1;
         z-index: 1;
     }
-    66%{
+    26%{
         opacity: 1;
         z-index: 1;
     }
-    100%{
+    75%{
         opacity: 0;
         z-index: 1;
     }
@@ -405,7 +406,7 @@ img{
 .headline_sub{
     font-size: calc(18 * var(--scale));
     line-height: 1;
-    color: #00984B;
+    color: #326939;
 }
 .headline_small{
     font-size: calc(14 * var(--scale));
@@ -720,6 +721,7 @@ img{
     .package_slider{
         margin: calc(30 * var(--scale)) auto 0;
         width: 100%;
+        overflow: visible;
     }
     .package_slider_container{
         display: flex;
