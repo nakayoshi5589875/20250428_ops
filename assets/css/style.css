@@ -269,7 +269,8 @@ img{
 
 @media screen and (max-width: 768px) {
     .main{
-        padding-top: calc(59 * var(--scale));
+        padding-top: calc(59 * var(--scale)); 
+        overflow-x: hidden;
     }
 }
 
