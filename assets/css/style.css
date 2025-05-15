@@ -426,6 +426,7 @@ img{
     width: calc(379 * var(--scale));
     font-size: calc(14 * var(--scale));
     line-height: 2;
+    text-align: justify;
 }
 .commonContainer_image{
     width: calc(688 * var(--scale));
@@ -852,6 +853,7 @@ img{
     margin-top: calc(17 * var(--scale));
     font-size: calc(14 * var(--scale));
     line-height: 2;
+    text-align: justify;
 }
 
 
@@ -955,12 +957,14 @@ img{
     line-height: 2;
 }
 .president_text strong{
-    padding-top: .5em;
-    background-position: top -.5em left;
-    background-repeat: repeat-x;
-    background-size: 1em;
-    background-image: -webkit-radial-gradient(.1em .1em at center center,#292929,#292929 100%,transparent);
-    background-image: radial-gradient(.1em .1em at center center,#292929,#292929 100%,transparent);
+    display: inline-block;
+    position: relative;
+}
+.president_text strong::after{
+    content:"・";
+    display: block;
+    position: absolute;
+    top: -.75em;
 }
 
 .president_name{

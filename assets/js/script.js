@@ -2,14 +2,14 @@
 
 
 
-window.addEventListener('load', (e) => {
+window.addEventListener('DOMContentLoaded', (e) => {
     scrollIn("js-scrollIn");
     clickHidden("js-hidden");
     scrollInOut("js-scrollInOut");
     modal("js-modal");
-    classAdd("js-load");
     modalClose("js-modalClose");
     modalMove("js-modalMove");
+    classAdd("js-load");
   });
   
   window.addEventListener('resize', (e) => {
