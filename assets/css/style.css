@@ -954,6 +954,15 @@ img{
     font-size: calc(14 * var(--scale));
     line-height: 2;
 }
+.president_text strong{
+    padding-top: .5em;
+    background-position: top -.5em left;
+    background-repeat: repeat-x;
+    background-size: 1em;
+    background-image: -webkit-radial-gradient(.1em .1em at center center,#292929,#292929 100%,transparent);
+    background-image: radial-gradient(.1em .1em at center center,#292929,#292929 100%,transparent);
+}
+
 .president_name{
     display: flex;
     justify-content: flex-start;
