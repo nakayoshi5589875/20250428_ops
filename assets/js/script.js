@@ -43,7 +43,7 @@ document.addEventListener( "DOMContentLoaded", function() {
 
     var splide02 = new Splide(".splide02",{
         destroy: true,
-        type   : 'loop',
+        type   : 'slide',
         width : '80%',
         perPage: 1,
         perMove: 1,
